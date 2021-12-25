@@ -1,0 +1,23 @@
+.categoryList{
+    width: 170px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #545454;
+    border: solid 1px #eaeaea;
+    color: #eaeaea;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-self: center;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.categoryList:hover{
+    background-color: #ff3c00;
+    color: #fff;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}

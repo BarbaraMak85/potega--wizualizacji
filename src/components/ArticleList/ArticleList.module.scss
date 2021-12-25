@@ -1,0 +1,25 @@
+.primarySection{
+    display: grid;
+    grid-template-columns:83%;
+    justify-content: center;
+    margin-top: 50px;
+   
+    .sectionWithColumn{
+        grid-template-columns: 76% 25%;
+        display: grid;
+       
+    }
+}
+
+.articleSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    
+}
+.articleSection{
+
+}
+.sidebarSection{
+    padding-left: 35px;
+}

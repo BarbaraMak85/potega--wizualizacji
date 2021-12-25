@@ -1,0 +1,117 @@
+.imgListArticle{
+    width: 100%;
+    object-fit: cover;
+   border-radius: 8px 8px 0px 0;
+   
+   
+}
+.titleArticle{
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.dataContainer{
+    display: grid;
+    grid-template-columns: 58% 37%;
+}
+.times{
+    text-align: end;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    display: grid;
+    align-self: center;
+}
+.sectionArticleParagraph{
+    padding: 30px 40px 30px 40px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.sectionArticle{
+padding-bottom: 40px;
+background-color: #fff;
+margin-bottom: 40px;
+border-radius: 8px;
+}
+.line{
+    background-color: #eaeaea;
+    height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+// .sectionArticleExcerp{
+//     background: snow;
+//     border-radius: 8px;
+//     overflow: hidden;
+//     opacity: 1;
+//     transform: translateX(0%) translateZ(0px);
+    
+// }
+.categoriesArticle{
+    background-color: #fff;
+    margin-right: 10px;
+    color: #ff3c00;
+    padding: 4px;
+    font-size: 12px;
+    border: solid 0.5px #ff3c00
+    
+}
+
+.post-preview {
+    background: snow;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+
+
+  .categoryList{
+    width: 170px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #545454;
+    border: solid 1px #eaeaea;
+    color: #eaeaea;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-self: center;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.categoryList:hover{
+    background-color: #ff3c00;
+    color: #fff;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.panelCategory{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 35px;
+    padding-left: 16px;
+    
+}
+.icons{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 21% 57%;
+    justify-content: flex-end;
+}
+.commentsParagfaph{
+    text-transform: uppercase;
+    color: #545454;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: grid;
+    align-self: center;
+}

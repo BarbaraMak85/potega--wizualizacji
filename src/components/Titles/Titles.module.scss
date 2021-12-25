@@ -1,0 +1,21 @@
+.titles_text {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #545454;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+.titles_line {
+  background-color: #ff3c00;
+  border: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 80px;
+  height: 3px;
+}
+
+@media (max-width: 768px) {
+  .titles_text {
+    font-size: 12px;
+  }
+}

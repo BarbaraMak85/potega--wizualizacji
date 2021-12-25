@@ -1,0 +1,36 @@
+.container{
+    background-color: #fff;
+    height: 77px;
+    margin-bottom: 60px;
+}
+
+.containerList{
+margin-left: 7%;
+display: grid;
+grid-template-columns: 10% 10% 10% 10% 45%;
+height: 77px;
+align-items: center;
+font-size: 20px;
+font-family: 'Roboto', sans-serif;
+color: #545454;
+font-weight:normal;
+}
+
+.list{
+    justify-content: center;
+    display: grid;
+    text-transform: uppercase;
+    height: 77px;
+    align-items: center;
+}
+
+.list:hover{
+    background-color: #ff3c00;
+    color: #fff;
+
+}
+.lineMenu{
+    height: 1px;
+    background-color: #545454;
+    margin-top: -2px;
+}
