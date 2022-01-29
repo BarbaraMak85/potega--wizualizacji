@@ -1,29 +1,28 @@
-import {createSlice} from '@reduxjs/toolkit'
-import { getPostsFromAPI } from '../api/postApi'
+import { createSlice } from "@reduxjs/toolkit";
+import { getPostsFromAPI } from "../api/postApi";
 
 const initialState = {
-    postsList: []
-}
+  postsList: [],
+};
 
 export const slice = createSlice({
-    name: "posts",
-    initialState,
-    reducers: {
-        addPosts: (state, action) => {
-            state.postsList = [...state.postsList, ...action.payload]
-        }
-    }
-})
+  name: "posts",
+  initialState,
+  reducers: {
+    addPosts: (state, action) => {
+      state.postsList = [...state.postsList, ...action.payload];
+    },
+  },
+});
 
-export const addPostsToStore = () => async dispatch => {
-    const response = await getPostsFromAPI();
-    const posts = await response.json();
-   
-    dispatch(addPosts(posts))
-}
+export const addPostsToStore = () => async (dispatch) => {
+  const response = await getPostsFromAPI();
 
-export const {addPosts} = slice.actions;
+  dispatch(addPosts(response.data));
+};
 
-export const postsList = state => state.posts.postsList;
+export const { addPosts } = slice.actions;
 
-export default slice.reducer
+export const postsList = (state) => state.posts.postsList;
+
+export default slice.reducer;

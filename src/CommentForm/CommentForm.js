@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { submitCommentApi } from "../api/commentsApi";
-const Commentform = () => {
+const Commentform = ({ post_id }) => {
   const [comment, setComments] = useState({ name: "", comment: "" });
   const handleFormSubmit = (e) => {
-    e.preventDefaut();
-    submitCommentApi(comment.name, comment.comment);
+    e.preventDefault();
+    submitCommentApi(comment.name, comment.comment, post_id);
   };
   return (
     <form onSubmit={handleFormSubmit}>
@@ -33,9 +33,8 @@ const Commentform = () => {
               }))
             }
             name="comment"
-          >
-            {comment.comment}
-          </textarea>
+            value={comment.comment}
+          ></textarea>
         </label>
       </div>
       <button>dodaj komentarz</button>

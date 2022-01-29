@@ -17,8 +17,7 @@ export const slice = createSlice({
 
 export const addCategoriesToStore = () => async (dispatch) => {
   const response = await getCategoriesApi();
-  const categories = await response.json();
-  dispatch(addCategories(categories));
+  dispatch(addCategories(response.data));
 };
 
 export const { addCategories } = slice.actions;

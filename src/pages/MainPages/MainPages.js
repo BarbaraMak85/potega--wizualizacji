@@ -15,7 +15,7 @@ function MainPage() {
       </div>
 
       <AriticleList />
-      <Comments />
+      {/* <Comments /> */}
       <Footer />
     </div>
   );

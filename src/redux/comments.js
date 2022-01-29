@@ -10,15 +10,15 @@ export const slice = createSlice({
   initialState,
   reducers: {
     addComments: (state, action) => {
-      state.comments = [...state.comments, ...action.payload];
+      state.comments = [...action.payload];
     },
   },
 });
 
-export const addCommentsToStore = () => async (dispatch) => {
-  const response = await getCommentsApi();
-  const comments = await response.json();
-  dispatch(addComments(comments));
+export const addCommentsToStore = (post_id) => async (dispatch) => {
+  const response = await getCommentsApi(post_id);
+
+  dispatch(addComments(response.data));
 };
 
 export const { addComments } = slice.actions;

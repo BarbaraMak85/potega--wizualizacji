@@ -11,6 +11,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { AnimatePresence } from "framer-motion";
 import routes from "../routes/routes";
+import AboutMe from "../pages/AboutMe/AboutMe";
 
 export const Router = () => {
   const dispatch = useDispatch();
@@ -34,6 +35,7 @@ export const Router = () => {
           <Switch location={location} key={location.pathname}>
             <Route exact path={routes.mainPage} component={MainPage} />
             <Route path={routes.pagesArticle} component={PagesArticle} />
+            <Route path={routes.AboutMe} component={AboutMe} />
           </Switch>
         </AnimatePresence>
       )}

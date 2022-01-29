@@ -3,31 +3,26 @@ import {
   comments as reduxComments,
   addCommentsToStore,
 } from "../../redux/comments";
+import Commentitem from "../CommentItem";
 
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-const Comment = () => {
+const Comment = ({ post_id }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(addCommentsToStore());
+    dispatch(addCommentsToStore(post_id));
   }, []);
 
   const comments = useSelector(reduxComments);
-  // const [comment, setComment] = useState([]);
 
-  // const getComments = async () => {
-  //   const response = await getCommentsApi();
-  //   const commentsdata = await response.json();
-  //   console.log(commentsdata, "comenstdata");
-  //   setComment(commentsdata);
-  // };
-
-  // useEffect(() => {
-  //   getComments();
-  // }, []);
-
-  return <div>{}</div>;
+  return (
+    <ul>
+      {comments.map((el) => (
+        <Commentitem key={el.id} {...el} />
+      ))}
+    </ul>
+  );
 };
 
 export default Comment;

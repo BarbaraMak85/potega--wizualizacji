@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ImArrowLeft } from "react-icons/im";
 import Commentform from "../../CommentForm/CommentForm";
+import Comment from "../Comments/Comments";
 
 const transition = { duration: 0.5, ease: "easeInOut" };
 
@@ -31,6 +32,7 @@ const SingleArticle = () => {
     if (posts.length > 0 && !findPost) {
       console.log("404");
     } else {
+      console.log(findPost);
       setPost(findPost);
     }
   }, [posts.length]);
@@ -77,7 +79,8 @@ const SingleArticle = () => {
           </div>
         )}
       </motion.article>
-      <Commentform />
+      {post && <Commentform post_id={post.id} />}
+      {post && <Comment post_id={post.id} />}
     </Fragment>
   );
 };

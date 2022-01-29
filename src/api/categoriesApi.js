@@ -1,2 +1,2 @@
-export const getCategoriesApi = () =>
-  fetch("http://localhost/potegawizualizacji/wp-json/wp/v2/categories");
+import base from "./base";
+export const getCategoriesApi = () => base.get("categories");
