@@ -1,4 +1,4 @@
 import axios from "axios";
 export default axios.create({
-  baseURL: "http://localhost/potegawizualizacji/wp-json/wp/v2/",
+  baseURL: "http://potegawizualizacji-admin.pl/wp-json/wp/v2/",
 });
