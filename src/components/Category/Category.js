@@ -30,7 +30,7 @@ const Category = ({}) => {
 
   return (
     <div>
-      <div>
+      <div className={styles.wpapperCategory}>
         <Titles> kategorie</Titles>
       </div>
       <ul>

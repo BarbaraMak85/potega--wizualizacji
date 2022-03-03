@@ -58,7 +58,7 @@ const SingleArticle = () => {
         variants={postVariants}
       >
         {!post && (
-          <div>
+          <div className={styles.loaderList}>
             <Loader />
           </div>
         )}

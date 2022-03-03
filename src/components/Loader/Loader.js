@@ -6,8 +6,8 @@ const Loader = ({ type, color }) => (
     className={styles.loader}
     type={type}
     color="#ff3c00"
-    height={"10%"}
-    width={"10%"}
+    height={"20%"}
+    width={"100%"}
   />
 );
 

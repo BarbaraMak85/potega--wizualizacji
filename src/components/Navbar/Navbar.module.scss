@@ -16,19 +16,23 @@ color: #545454;
 font-weight:normal;
 }
 
-.list{
+.list, a{
     justify-content: center;
     display: grid;
     text-transform: uppercase;
     height: 77px;
     align-items: center;
+    color: #545454;
 }
 
 .list:hover{
     background-color: #ff3c00;
     color: #fff;
-
+a {
+    color: #fff; 
 }
+}
+
 .lineMenu{
     height: 1px;
     background-color: #545454;

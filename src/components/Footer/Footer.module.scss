@@ -1,0 +1,30 @@
+.footer{
+    background-color: #fff;
+}
+.lineFooter{
+    height: 1px;
+    background-color: #545454;
+    margin-top: -2px
+}
+.logoFooter{
+    width: 228px;
+}
+.sectionFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section_subscribe{
+    justify-self: center;
+    padding-top: 30px;
+}
+.section_logo{
+    justify-self: center;
+    padding-top: 30px;
+}
+.text_footer{
+    display: grid;
+    justify-content: center;
+   color: #545454;
+  font-family: "Roboto Condensed", sans-serif;
+}
+

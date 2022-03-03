@@ -1,0 +1,28 @@
+.subscribeWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 12%;
+    padding-bottom: 100px;
+  }
+  .subscribeWrapper_icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: solid 2px #545454;
+    color: #545454;
+    margin: 2px 2px 2px 2px;
+  }
+  .subscribeWrapper_icon:hover {
+    background-color: #ff3c00;
+    color: #eaeaea;
+  }
+  
+  @media (max-width: 768px) {
+    .subscribeWrapper_icon {
+      font-size: 6px;
+      width: 24px;
+      height: 24px;
+    }
+  }

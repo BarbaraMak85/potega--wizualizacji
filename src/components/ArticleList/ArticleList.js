@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 import styles from "./ArticleList.module.scss";
 import Sidebar from "../Sidebar/Sidebar";
-import ButtonRed from "../ButtonRed/ButtonRed";
 
 import { motion } from "framer-motion";
 

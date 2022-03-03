@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import MainPage from "../pages/MainPages/MainPages";
 import PagesArticle from "../pages/PagesArticle/PagesArticle";
+import PagesPosts from "../pages/PagesPosts/PagesPosts";
 
 import { useEffect } from "react";
 import { addPostsToStore, postsList } from "../redux/posts";
@@ -12,6 +13,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { AnimatePresence } from "framer-motion";
 import routes from "../routes/routes";
 import AboutMe from "../pages/AboutMe/AboutMe";
+
+import ContactPage from "../pages/ContactPage/ContactPage";
 
 export const Router = () => {
   const dispatch = useDispatch();
@@ -35,7 +38,9 @@ export const Router = () => {
           <Switch location={location} key={location.pathname}>
             <Route exact path={routes.mainPage} component={MainPage} />
             <Route path={routes.pagesArticle} component={PagesArticle} />
-            <Route path={routes.AboutMe} component={AboutMe} />
+            <Route path={routes.aboutPage} component={AboutMe} />
+            <Route path={routes.postsPages} component={PagesPosts} />
+            <Route path={routes.contactPage} component={ContactPage} />
           </Switch>
         </AnimatePresence>
       )}

@@ -1,0 +1,79 @@
+.form{
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.formName, .formEmail, .formText, .formTopic{
+    display: grid;
+}
+ .formContent{
+    display: grid;
+    height: 100px;
+}
+.formInput{
+    border: none;
+    border-bottom: 1.5px solid #545454;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    
+}
+.formContent{
+   
+    border: none;
+    border-bottom: 1.5px solid #545454;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    outline: none;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding-left: 5px;
+}
+.contactLabel{
+    font-size: 14px;
+    color: #545454;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.error__message {
+    color: #ff3c00;
+    font-size: 12px;
+  }
+
+.title{
+      display: grid;
+      justify-content: center;
+      padding-bottom: 30px;
+}
+
+.formCheckBox {
+    
+    color: #545454;
+  }
+.formLink {
+    text-decoration: none;
+    color: #545454;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Century Gothic;
+    margin-left: 10px;
+  }
+
+.formRodo{
+    display: grid;
+    grid-template-columns: 5% 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+.formButton{
+    display: grid;
+    justify-content: center;
+}

@@ -1,7 +1,9 @@
 import React from "react";
 import Titles from "../Titles/Titles";
-import Woman from "../../assets/woman.jpg";
+import Woman from "../../assets/zdjęcie.jpg";
+
 import styles from "./AboutMe.module.scss";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -17,6 +19,9 @@ const AboutMe = () => {
         expedita cum. Quos reiciendis, soluta deleniti ex placeat fuga libero
         officiis labore ea sed.
       </p>
+      <Link className={styles.link} to="/o-mnie">
+        Czytaj więcej
+      </Link>
     </div>
   );
 };
